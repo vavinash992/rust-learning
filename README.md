@@ -3,4 +3,4 @@ Repo to log Rust learning journey
 
 ---
 ### 4 Dec,2024
-- 
+- Macros, expect statements and project management using cargo
