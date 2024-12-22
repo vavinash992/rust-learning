@@ -2,6 +2,9 @@
 Repo to log Rust learning journey
 
 ---
+### 22 Dec, 2024
+- Control flow, functions, Ownership,scope and assignment, Heap and stack memory, Mutable refernce, Dangled referrencing
+
 ### 8 Dec, 2024
 - Constants, variables, Data types, integer overflow handling
 

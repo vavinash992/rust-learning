@@ -1,29 +1,34 @@
-use std::io;
-use rand::Rng;
-use std::cmp::Ordering;
+// fn main(){
+//     let mut s = String::from("hello");
 
-fn main(){
-    let secret_number: u32 = rand::thread_rng().gen_range(1..=200);
-    loop{
-        let mut number = String::new();
-        println!("Please enter the number:");
-        io::stdin().read_line(&mut number)
-                .expect("Error reading the number");
-        let number: u32 = match number.trim().parse(){
-            Ok(num) => num,
-            Err(_) => {
-                println!("Entered value is not a number please enter a correct number");
-                continue;
-            }
-        };
-        match number.cmp(&secret_number){
-            Ordering::Greater => println!("Too Big!!"),
-            Ordering::Less => println!("Too Small:("),
-            Ordering::Equal => {println!("You won!!!!!!");
-                                break}
-        }
-    }
+//     let r1 = &mut s;
+//     let r2 = &s;
+
+//     println!("{}, {}", r1, r2);
+// }
+
+##################################################
+
+// fn main() {
+//     let mut s = String::from("hello");
+
+//     change(&mut s);
+//     println!("{s}")
+// }
+
+// fn change(some_string: &mut String) {
+//     some_string = some_string.copy();
+//     some_string.push_str(", world");
+// }
+
+##################################################
+
+
+fn main() {
+    let reference_to_nothing = dangle();
 }
 
-// Code for info till https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
-
+fn dangle() -> &String {
+    let s = String::from("hello");
+    &s
+}
