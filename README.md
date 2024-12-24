@@ -2,6 +2,9 @@
 Repo to log Rust learning journey
 
 ---
+### 24 Dec, 2024
+- Slices and reason for string literal immutability
+
 ### 22 Dec, 2024
 - Control flow, functions, Ownership,scope and assignment, Heap and stack memory, Mutable refernce, Dangled referrencing
 
