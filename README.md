@@ -2,6 +2,9 @@
 Repo to log Rust learning journey
 
 ---
+### 10 Feb, 2025
+- Had to take a break from Rust learning due to other commitments. So, went through the previous notes and revised the concepts.
+
 ### 24 Dec, 2024
 - Slices and reason for string literal immutability
 
